@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xiaomi Redmi Note 10 Pro | Prodotype</title>
+    <link rel="stylesheet" href="/styling/w3.css" />
+    <link rel="stylesheet" href="/fontawesome-free-5.15.2-web/css/all.css" />
+    <link rel="stylesheet" href="/styling/1.3.0/css/line-awesome.css" />
+    <link rel="stylesheet" href="/styling/mystyle.css" />
+
+    <style>
+      body {
+        background-color: #f1f1f1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <section class="w3-white w3-card-2">
+      <div class="max-fat">
+        <div class="menu-btn">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <ul class="w3-navbar w3-padding-4">
+          <li class="title">
+            <a class="w3-large w3-text-teal" href="/index.htm"
+              ><b><i class="fas fa-cart-arrow-down"></i> PRODOTYPE</b>
+            </a>
+          </li>
+          <div class="w3-right nav-menu w3-animate-left">
+            <li class="w3-dropdown-hover w3-white">
+              <a href="#">Categories <i class="fas fa-caret-down"></i></a>
+              <div class="w3-dropdown-content w3-card-2">
+                <a href="#">fashion</a>
+                <a href="/techpage.htm">Phones & Gadgets</a>
+                <a href="#">Food & drinks</a>
+              </div>
+            </li>
+            <li><a href="/news.htm">News</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Search</a></li>
+            <li>
+              <a
+                class="w3-btn w3-teal w3-round"
+                href="#"
+                onclick="document.getElementById('id01').style.display='block'"
+                >Join Now</a
+              >
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- login form -->
+
+      <div id="id01" class="w3-modal">
+        <span
+          onclick="document.getElementById('id01').style.display='none'"
+          class="w3-closebtn w3-hover-red w3-container w3-padding-16 w3-display-topright"
+          >×</span
+        >
+        <div
+          class="w3-modal-content w3-card-8 w3-animate-top carddy"
+          style="max-width: 600px"
+        >
+          <div class="w3-center pad-20 w3-xlarge">
+            <b>Login into your Account</b>
+          </div>
+
+          <!-- login form -->
+          <div class="w3-container">
+            <div class="w3-section">
+              <label><b>Username</b></label>
+              <input
+                class="w3-input w3-border mg-10 w3-round"
+                type="text"
+                placeholder="Enter Username"
+                required
+              />
+
+              <label><b>Password</b></label>
+              <input
+                class="w3-input w3-border mg-10 w3-round"
+                type="text"
+                placeholder="Enter Password"
+                required
+              />
+              <input
+                class="w3-check w3-margin-top"
+                type="checkbox"
+                checked="checked"
+              />
+              Remember me
+              <button
+                class="w3-btn w3-btn-block w3-teal w3-round mg-10 w3-large"
+                type="submit"
+              >
+                <b>Login</b>
+              </button>
+              <p>
+                <i
+                  >don't have an Account?
+                  <a href="/signup.htm" class="w3-text-amber"
+                    ><b>Register Now</b></a
+                  ></i
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+            <button
+              onclick="document.getElementById('id01').style.display='none'"
+              type="button"
+              class="w3-btn w3-card w3-round w3-grey"
+            >
+              Cancel
+            </button>
+            <span class="w3-right w3-padding w3-text-teal">
+              <a href="#">Forgot password?</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shifter">
+      <div class="max-fat post-grid">
+        <div class="row-grid">
+          <!-- product image and name -->
+          <div class="carddy w3-white">
+            <img
+              src="/styling/products images/IMG_20210112_082035_946.jpg"
+              alt="Norway"
+              class="product-image"
+              style="width: 100%"
+            />
+            <div class="w3-padding">
+              <p class="w3-large"><b>Xiaomi Redmi Note 10 Pro</b></p>
+              <p><i>mobile Phones</i></p>
+              <p>
+                3.0 <i class="fas fa-star w3-text-amber"></i>
+                <i class="fas fa-star w3-text-amber"></i>
+                <i class="fas fa-star w3-text-amber"></i>
+                <i class="fas fa-star w3-text-amber"></i>
+                <i class="text- fas fa-star w3-text-amber"></i> (540)
+              </p>
+              <p><i class="fas fa-fire w3-text-teal"></i> 1,200 views</p>
+            </div>
+          </div>
+
+          <!-- info about the product -->
+          <div class="overview carddy w3-white w3-large pad-10">
+            <h3><b>overview</b></h3>
+            <p><b>Brand:</b> Xiaomi Redmi</p>
+            <p><b>Release date:</b> 2Oth September, 2020</p>
+            <p><b>Price Range:</b> $150 - $230</p>
+            <p>
+              <b>Description:</b> Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Id eaque libero sapiente commodi aut. Velit
+              dolore explicabo, eius reprehenderit sit dolorem, natus fugiat,
+              fuga culpa porro quod? Nihil iste necessitatibus, hic consequatur
+              alias libero quas!
+            </p>
+          </div>
+
+          <!-- users reviews -->
+          <div class="post-reviews carddy w3-white pad-10 w3-padding">
+            <h3><b>Recent Reviews</b></h3>
+            <div>
+              <div class="w3-padding break-line">
+                <div class="grid-2">
+                  <img
+                    src="/styling/customers/paulo.jpg"
+                    class="profile-pic"
+                    alt=""
+                  />
+                  <div>
+                    <p><b> Paulo</b></p>
+                    <p><i>6 hours Ago</i></p>
+                    <p>
+                      3.0 <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="text- fas fa-star w3-text-amber"></i>
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  I recently purchased the iPhone 11 Pro and honestly speaking,
+                  it was a disappointment, there was no many improvements from
+                  the previous version.
+                </p>
+              </div>
+              <div class="w3-padding break-line">
+                <div class="grid-2">
+                  <img
+                    src="/styling/customers/GBWA-20190405234048.jpg"
+                    class="profile-pic"
+                    alt=""
+                  />
+                  <div>
+                    <p><b>Mauren</b></p>
+                    <p><i>an hour Ago</i></p>
+                    <p>
+                      5.0 <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="text- fas fa-star w3-text-amber"></i>
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  I have being using the Xplorer perfume for over 2yrs now and
+                  the scent is very capturing. In short, i have gotten 2 bf's by
+                  them just perceiving the perfume.
+                </p>
+              </div>
+              <div class="w3-padding break-line">
+                <div class="grid-2">
+                  <img
+                    src="/styling/customers/paulo2.jpg"
+                    class="profile-pic"
+                    alt=""
+                  />
+                  <div>
+                    <p><b>Clinton</b></p>
+                    <p><i>10 hours Ago</i></p>
+                    <p>
+                      4.5 <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="text- fas fa-star w3-text-amber"></i>
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  I am video game savvy and the new Dell Aspirin I just got is
+                  amazing. It is Super fast with a core-i7 and very strong
+                  battery life.
+                </p>
+              </div>
+              <div class="w3-padding break-line">
+                <div class="grid-2">
+                  <img
+                    src="/styling/customers/lois.jpg"
+                    class="profile-pic"
+                    alt=""
+                  />
+                  <div>
+                    <p><b>Lois</b></p>
+                    <p><i>2 hours Ago</i></p>
+                    <p>
+                      5.0 <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="fas fa-star w3-text-amber"></i>
+                      <i class="text- fas fa-star w3-text-amber"></i>
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  I love eating snacks a lot and I can beat my chest to say that
+                  "PureBliss" is the best biscuit of the decade. Trust me I can
+                  eat 5 packs at stretch.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carddy w3-white w3-padding">
+            <h3><b>Related products</b></h3>
+            <div class="grid-5">
+              <div>
+                <img
+                  src="/styling/products images/IMG_20201227_141157_857.jpg"
+                  alt=""
+                />
+                <p><b> Acer laptop 1TB hard disk </b></p>
+              </div>
+              <div>
+                <img
+                  src="/styling/products images/IMG_20210112_081909_774.jpg"
+                  alt=""
+                />
+                <p><b> HP Jaguar 500HDD core-i5 8th generation</b></p>
+              </div>
+              <div>
+                <img
+                  src="/styling/products images/IMG_20210112_082035_946.jpg"
+                  alt=""
+                />
+                <p><b> Xiaomi Mi 11 Android 11 5G 256 int. mem </b></p>
+              </div>
+              <div>
+                <img
+                  src="/styling/products images/IMG_20210112_173355_682.jpg"
+                  alt=""
+                />
+                <p><b> Apple Macbook Air intel core-i7 wireless charging</b></p>
+              </div>
+              <div>
+                <img
+                  src="/styling/products images/IMG_20210114_215331_803.jpg"
+                  alt=""
+                />
+                <p><b> Asus student notebook</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- sidebar -->
+        <!-- share box -->
+        <aside class="2nd-column side-grid">
+          <div class="carddy w3-white">
+            <p class="w3-large w3-margin w3-center">
+              <b>Share to <i class="la la-telegram"></i></b>
+            </p>
+            <div>
+              <p class="w3-xxlarge w3-text-teal w3-center">
+                <i class="la la-facebook"></i>
+                <i class="la la-instagram"></i>
+                <i class="la la-youtube"></i>
+                <i class="la la-twitter"></i>
+                <i class="la la-linkedin"></i>
+              </p>
+            </div>
+          </div>
+
+          <!-- add review form -->
+          <div class="w3-container carddy w3-white w3-padding w3-large">
+            <p class="w3-center"><b>Add A review</b></p>
+            <label for="">Name</label>
+            <input type="text" class="w3-input" />
+            <label for="">Email</label>
+            <input type="email" name="" id="" class="w3-input" />
+            <p class="mg-10">Give Your Rating</p>
+            <p>
+              <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+              <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+              <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+              <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+              <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+            </p>
+            <label for="">Write your review</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="6"
+              style="resize: none; width: 100%"
+              class="pad-10 mg-10"
+            ></textarea>
+            <button class="w3-btn-block mg-10 w3-teal w3-round">
+              <b>Submit Review</b>
+            </button>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <section class="footer w3-dark-grey pad-50">
+      <div class="max-fat grid-4">
+        <div>
+          <h2 id="footerTitle">
+            <b><i class="fas fa-cart-arrow-down"></i> PRODOTYPE</b>
+          </h2>
+          <p>Home of the best and reliable product reviews out there</p>
+          <p>Copyright &copy; 2021</p>
+        </div>
+        <div>
+          <a href="">About</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Affiliate Disclosure</a>
+          <a href="">Our team</a>
+          <a href="">Other Products</a>
+          <a href="">Docs</a>
+          <a href="">Partners</a>
+        </div>
+        <div>
+          <p class="w3-xlarge">
+            <b> Recieve best product discounts weekly in your inbox</b>
+          </p>
+          <p>
+            sign up now so you won't miss out on pocket saving discounts and
+            promos compiled from different e-commerce stores.
+          </p>
+          <label class="w3-label w3-text-white" for="">Your email:</label>
+          <input class="w3-input w3-round w3-text-teal" type="email" />
+          <button class="w3-btn w3-amber w3-round w3-margin">Sign Me Up</button>
+        </div>
+        <div class="w3-center">
+          <p class="w3-xlarge"><b> Follow Us On</b></p>
+          <i class="la la-facebook w3-xxlarge w3-margin"></i>
+          <i class="la la-youtube w3-xxlarge w3-margin"></i>
+          <i class="la la-twitter w3-xxlarge w3-margin"></i>
+          <i class="la la-pinterest w3-xxlarge w3-margin"></i>
+        </div>
+      </div>
+    </section>
+    <script src="/script/scripts.js"></script>
+  </body>
+</html>
