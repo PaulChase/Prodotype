@@ -2,9 +2,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-/* * {
-  color: #4f4f4f;
-} */
 
 /* utilities */
 input {
@@ -126,15 +123,15 @@ textarea {
   position: relative;
 } */
 
-.dropdown-content {
+/* .dropdown-content {
   display: none;
   position: absolute;
   overflow: auto;
-}
+} */
 
-.mobile-drop {
+/* .mobile-drop {
   display: none;
-}
+} */
 
 /* showcase */
 .showcaseBg {
@@ -290,54 +287,6 @@ textarea {
 
   .nav-menu {
     display: none;
-    transition: display 2s;
-  }
-
-  .menu-btn:hover {
-    opacity: 0.5;
-  }
-  /* 
-  .w3-navbar #topnav {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    padding: 40px 20px;
-    line-height: 3;
-    font-weight: bolder;
-    background-color: #404040;
-    opacity: 0.9;
-    width: 60%;
-    height: 100%;
-    text-align: left;
-    color: #fff;
-    font-size: 18px;
-    box-shadow: 3px 0 20px #a6a6a6;
-    transition: left 0.5s linear;
-  } */
-
-  /* .w3-navbar .dropdown {
-    display: none;
-  } */
-
-  #topnav select option {
-    border-radius: 20px;
-  }
-
-  .mobile-drop {
-    display: block;
-  }
-
-  .mobile-drop select {
-    width: 100%;
-    display: inline-block;
-    background-color: inherit;
-    border: none;
-    margin: 0 10px;
-  }
-
-  .mobile-drop select option {
-    margin: 20px 0;
   }
 
   .title {
@@ -345,9 +294,6 @@ textarea {
     width: 180px;
   }
 
-  .dropdown-content {
-    position: fixed;
-  }
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
