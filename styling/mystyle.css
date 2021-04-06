@@ -119,19 +119,29 @@ textarea {
   color: #4f4f4f;
 }
 
-/* .dropdown {
-  position: relative;
-} */
+.reactions {
+  color: #4f4f4f;
+}
 
-/* .dropdown-content {
-  display: none;
-  position: absolute;
-  overflow: auto;
-} */
+/* navigation */
+.top-search {
+  width: 100px;
 
-/* .mobile-drop {
-  display: none;
-} */
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-image: url("./images/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 8px 10px 8px 35px;
+
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.top-search:focus {
+  width: 100%;
+}
 
 /* showcase */
 .showcaseBg {
@@ -278,11 +288,31 @@ textarea {
   height: 27vh;
 }
 
+/* sign up page */
+.register-bg {
+  position: relative;
+  background: url("./images/pple\ smile.jpg") no-repeat center center/cover;
+  height: 1000px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 /* responsive */
 
 @media (max-width: 650px) {
   .menu-btn {
     display: block;
+  }
+
+  .register-bg {
+    height: 1300px;
   }
 
   .nav-menu {

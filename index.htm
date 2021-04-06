@@ -25,18 +25,21 @@
               ><b><i class="fas fa-cart-arrow-down"></i> PRODOTYPE</b>
             </a>
           </li>
-          <div class="w3-right nav-menu w3-animate-left">
+
+          <div class="w3-right nav-menu">
             <li class="w3-dropdown-hover w3-light-grey">
-              <a href="#">Categories <i class="fas fa-caret-down"></i></a>
+              <a href="#" class="category-btn"
+                >Categories <i class="fas fa-caret-down"></i
+              ></a>
               <div class="w3-dropdown-content w3-card-2">
-                <a href="#">fashion & Cosmetics</a>
+                <a href="#">fashion</a>
                 <a href="/techpage.htm">Phones & Gadgets</a>
                 <a href="#">Food & drinks</a>
               </div>
             </li>
-            <li><a href="news.htm">News</a></li>
+            <li><a href="/news.htm">News</a></li>
             <li><a href="#">About</a></li>
-            <!-- <li><a href="#">Search</a></li> -->
+
             <li>
               <a
                 class="w3-btn w3-teal w3-round"
@@ -68,33 +71,35 @@
           <!-- login form -->
           <div class="w3-container">
             <div class="w3-section">
-              <label><b>Username</b></label>
-              <input
-                class="w3-input w3-border mg-10 w3-round"
-                type="text"
-                placeholder="Enter Username"
-                required
-              />
+              <form class="login-form">
+                <label><b>Username</b></label>
+                <input
+                  class="w3-input w3-border mg-10 w3-round username"
+                  type="text"
+                  placeholder="Enter Username"
+                  required
+                />
 
-              <label><b>Password</b></label>
-              <input
-                class="w3-input w3-border mg-10 w3-round"
-                type="text"
-                placeholder="Enter Password"
-                required
-              />
-              <input
-                class="w3-check w3-margin-top"
-                type="checkbox"
-                checked="checked"
-              />
-              Remember me
-              <button
-                class="w3-btn w3-btn-block w3-teal w3-round mg-10 w3-large"
-                type="submit"
-              >
-                <b>Login</b>
-              </button>
+                <label><b>Password</b></label>
+                <input
+                  class="w3-input w3-border mg-10 w3-round"
+                  type="password"
+                  placeholder="Enter Password"
+                  required
+                />
+                <input
+                  class="w3-check w3-margin-top"
+                  type="checkbox"
+                  checked="checked"
+                />
+                Remember me
+                <button
+                  class="w3-btn w3-btn-block w3-teal w3-round mg-10 w3-large login-btn"
+                  type="submit"
+                >
+                  <b>Login</b>
+                </button>
+              </form>
               <p>
                 <i
                   >don't have an Account?
@@ -122,7 +127,18 @@
       </div>
     </section>
 
+    <!-- after login message -->
+    <div class="w3-modal login-message">
+      <div class="w3-modal-content carddy">
+        <div class="w3-container carddy">
+          <p class="w3-large welcome"></p>
+          <button class="close-btn">Continue to site</button>
+        </div>
+      </div>
+    </div>
+
     <!-- showcase -->
+
     <section class="showcaseBg">
       <div class="max-fat w3-container">
         <div class="textLimit">

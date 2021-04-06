@@ -29,7 +29,14 @@
               ><b><i class="fas fa-cart-arrow-down"></i> PRODOTYPE</b>
             </a>
           </li>
-          <div class="w3-right nav-menu w3-animate-left">
+          <div class="w3-right nav-menu">
+            <li>
+              <input
+                type=" text"
+                class="top-search w3-small"
+                placeholder="search products here..."
+              />
+            </li>
             <li class="w3-dropdown-hover w3-light-grey">
               <a href="#">Categories <i class="fas fa-caret-down"></i></a>
               <div class="w3-dropdown-content w3-card-2">
@@ -72,33 +79,35 @@
           <!-- login form -->
           <div class="w3-container">
             <div class="w3-section">
-              <label><b>Username</b></label>
-              <input
-                class="w3-input w3-border mg-10 w3-round"
-                type="text"
-                placeholder="Enter Username"
-                required
-              />
+              <form class="login-form">
+                <label><b>Username</b></label>
+                <input
+                  class="w3-input w3-border mg-10 w3-round username"
+                  type="text"
+                  placeholder="Enter Username"
+                  required
+                />
 
-              <label><b>Password</b></label>
-              <input
-                class="w3-input w3-border mg-10 w3-round"
-                type="text"
-                placeholder="Enter Password"
-                required
-              />
-              <input
-                class="w3-check w3-margin-top"
-                type="checkbox"
-                checked="checked"
-              />
-              Remember me
-              <button
-                class="w3-btn w3-btn-block w3-teal w3-round mg-10 w3-large"
-                type="submit"
-              >
-                <b>Login</b>
-              </button>
+                <label><b>Password</b></label>
+                <input
+                  class="w3-input w3-border mg-10 w3-round"
+                  type="password"
+                  placeholder="Enter Password"
+                  required
+                />
+                <input
+                  class="w3-check w3-margin-top"
+                  type="checkbox"
+                  checked="checked"
+                />
+                Remember me
+                <button
+                  class="w3-btn w3-btn-block w3-teal w3-round mg-10 w3-large login-btn"
+                  type="submit"
+                >
+                  <b>Login</b>
+                </button>
+              </form>
               <p>
                 <i
                   >don't have an Account?
@@ -126,117 +135,134 @@
       </div>
     </section>
 
-    <div class="shifter">
-      <div
-        class="w3-white w3-leftbar w3-light-grey pad-10 w3-border-green max-fat"
-      >
-        <p class="w3-large w3-text-teal">
-          <b> Register for A New Account</b>
-        </p>
-      </div>
-      <div class="w3-row-padding max-fat pad-30">
-        <div class="w3-col l6 mg-10 pad-30">
-          <p class="w3-xlarge w3-center">
-            <b>
-              Join the largest Community of Product Reviewers and critics.
-              <br />
-              When you Register, you get a personalised Dashboard to manage your
-              Account, ratings and reviews and message other members... <br />
-              And also as a new member, you get a FREE branded T-shirt shipped
-              directly to your doorstep.
-            </b>
-          </p>
-        </div>
-        <div class="w3-col l6">
-          <div class="carddy w3-light-grey">
-            <div class="w3-teal pad-10 carddy">
-              <p class="w3-xlarge w3-center">
-                <b>Fill in your details to Register</b>
-              </p>
-            </div>
-            <form action="" class="w3-padding mg-10">
-              <div class="grid-2-col">
-                <div class="">
-                  <label for="">First Name</label>
-                  <input
-                    type="text"
-                    class="w3-input w3-round w3-border mg-10"
-                  />
-                </div>
-                <div class="">
-                  <label for="">Last Name</label>
-                  <input
-                    type="text"
-                    class="w3-input w3-round w3-border mg-10"
-                  />
-                </div>
-              </div>
-              <label for="">Email</label>
-              <input
-                type="email"
-                name=""
-                id=""
-                class="w3-input w3-round w3-border mg-10"
-              />
-              <label for="">Phone Number</label>
-              <input
-                type="tel"
-                name=""
-                id=""
-                class="w3-input w3-round w3-border mg-10"
-              />
-              <label for="" class="mg-10"
-                >What niche are you most interested in?</label
-              ><br />
-              <input class="w3-check" type="checkbox" />
-              <label class="w3-validate">Phone & Gadgets</label>
-
-              <input class="w3-check mg-s-10" type="checkbox" />
-              <label class="w3-validate">cosmetics</label>
-
-              <input class="w3-check mg-s-10" type="checkbox" />
-              <label class="w3-validate">fashion & wears</label>
-
-              <input class="w3-check mg-s-10" type="checkbox" />
-              <label class="w3-validate">food & drinks</label>
-
-              <input class="w3-check mg-s-10" type="checkbox" />
-              <label class="w3-validate">aoutomobiles</label>
-
-              <input class="w3-check mg-s-10" type="checkbox" />
-              <label class="w3-validate">Electronics</label><br />
-
-              <label for="" class="mg-10">Create Password</label>
-              <input
-                type="password"
-                name=""
-                id=""
-                class="w3-input w3-round w3-border mg-10"
-              />
-              <label for="" class="mg-10">Re-type Password</label>
-              <input
-                type="password"
-                name=""
-                id=""
-                class="w3-input w3-round w3-border mg-10"
-              />
-
-              <input class="w3-check" type="checkbox" />
-              <label class="w3-validate"
-                >I agree to the terms and conditions</label
-              ><br />
-
-              <input class="w3-check" type="checkbox" />
-              <label class="w3-validate">Sign me up for weekly newsletter</label
-              ><br />
-              <button class="w3-btn-block mg-10 w3-teal w3-round w3-large">
-                <b>Count Me In</b>
-              </button>
-            </form>
-          </div>
+    <!-- after login message -->
+    <div class="w3-modal login-message">
+      <div class="w3-modal-content carddy">
+        <div class="w3-container carddy">
+          <p class="w3-large welcome"></p>
+          <button class="close-btn">Continue to site</button>
         </div>
       </div>
     </div>
+
+    <!-- registeration area -->
+    <section class="register-bg">
+      <div class="overlay">
+        <div class="shifter">
+          <div
+            class="w3-white w3-leftbar w3-light-grey pad-10 w3-border-green max-fat"
+          >
+            <p class="w3-large w3-text-teal">
+              <b> Register for A New Account</b>
+            </p>
+          </div>
+          <div class="w3-row-padding max-fat pad-30">
+            <div class="w3-col l6 mg-10 pad-30">
+              <p class="w3-xlarge w3-center w3-text-white">
+                <b>
+                  Join the largest Community of Product Reviewers and critics.
+                  <br />
+                  When you Register, you get a personalised Dashboard to manage
+                  your Account, ratings and reviews and message other members...
+                  <br />
+                  And also as a new member, you get a FREE branded T-shirt
+                  shipped directly to your doorstep.
+                </b>
+              </p>
+            </div>
+            <div class="w3-col l6">
+              <div class="carddy w3-light-grey">
+                <div class="w3-teal pad-10 carddy">
+                  <p class="w3-xlarge w3-center">
+                    <b>Fill in your details to Register</b>
+                  </p>
+                </div>
+                <form action="" class="w3-padding mg-10">
+                  <div class="grid-2-col">
+                    <div class="">
+                      <label for="">First Name</label>
+                      <input
+                        type="text"
+                        class="w3-input w3-round w3-border mg-10"
+                      />
+                    </div>
+                    <div class="">
+                      <label for="">Last Name</label>
+                      <input
+                        type="text"
+                        class="w3-input w3-round w3-border mg-10"
+                      />
+                    </div>
+                  </div>
+                  <label for="">Email</label>
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    class="w3-input w3-round w3-border mg-10"
+                  />
+                  <label for="">Phone Number</label>
+                  <input
+                    type="tel"
+                    name=""
+                    id=""
+                    class="w3-input w3-round w3-border mg-10"
+                  />
+                  <label for="" class="mg-10"
+                    >What niche are you most interested in?</label
+                  ><br />
+                  <input class="w3-check" type="checkbox" />
+                  <label class="w3-validate">Phone & Gadgets</label>
+
+                  <input class="w3-check mg-s-10" type="checkbox" />
+                  <label class="w3-validate">cosmetics</label>
+
+                  <input class="w3-check mg-s-10" type="checkbox" />
+                  <label class="w3-validate">fashion & wears</label>
+
+                  <input class="w3-check mg-s-10" type="checkbox" />
+                  <label class="w3-validate">food & drinks</label>
+
+                  <input class="w3-check mg-s-10" type="checkbox" />
+                  <label class="w3-validate">aoutomobiles</label>
+
+                  <input class="w3-check mg-s-10" type="checkbox" />
+                  <label class="w3-validate">Electronics</label><br />
+
+                  <label for="" class="mg-10">Create Password</label>
+                  <input
+                    type="password"
+                    name=""
+                    id=""
+                    class="w3-input w3-round w3-border mg-10"
+                  />
+                  <label for="" class="mg-10">Re-type Password</label>
+                  <input
+                    type="password"
+                    name=""
+                    id=""
+                    class="w3-input w3-round w3-border mg-10"
+                  />
+
+                  <input class="w3-check" type="checkbox" />
+                  <label class="w3-validate"
+                    >I agree to the terms and conditions</label
+                  ><br />
+
+                  <input class="w3-check" type="checkbox" />
+                  <label class="w3-validate"
+                    >Sign me up for weekly newsletter</label
+                  ><br />
+                  <button class="w3-btn-block mg-10 w3-teal w3-round w3-large">
+                    <b>Count Me In</b>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- footer  -->
     <section class="footer w3-dark-grey pad-50">
