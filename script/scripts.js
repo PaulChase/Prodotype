@@ -46,3 +46,131 @@ let loginMessageClose = document.querySelector(".close-btn");
 loginMessageClose.addEventListener("click", () => {
   loginMessage.style.display = "none";
 });
+
+// getting review form
+let reviewForm = document.querySelector(".review-form");
+
+// the date the review was addded
+let d = new Date();
+
+// adding event to the review form
+reviewForm.addEventListener("submit", submitReview);
+
+// alert message
+let confirmMessage = document.querySelector(".alertMessage");
+
+function submitReview(e) {
+  e.preventDefault();
+  // reviewForm.style.display = "none";
+
+  // getting values from form
+  let customerName = document.querySelector(".customer-name").value;
+  let customerReview = document.querySelector(".customer-review").value;
+
+  let reviews = document.querySelector(".post-reviews ");
+
+  // creating the necessary elements
+  let divright = document.createElement("div");
+  let divtop = document.createElement("div");
+  let divGeneral = document.createElement("div");
+  let pName = document.createElement("p");
+  let review = document.createElement("p");
+  let reactions = document.createElement("div");
+  let avtatar = document.createElement("img");
+  let boldname = document.createElement("b");
+  let timeReviewed = document.createElement("p");
+  let ratings = document.createElement("p");
+  let numberRating = document.createTextNode("4.0");
+
+  // the reactions section
+  reactions.className = "reactions";
+  let likes = document.createElement("i");
+  likes.className = " la la-thumbs-up w3-xlarge mg-s-10";
+  let dislikes = document.createElement("i");
+  dislikes.className = " la la-thumbs-down w3-xlarge mg-s-10";
+  let comments = document.createElement("i");
+  comments.className = " la la-comments w3-xlarge mg-s-10";
+  let closeReview = document.createElement("i");
+  closeReview.className =
+    "fas fa-times-circle w3-xlarge mg-s-10  w3-text-dark-grey w3-hover-text-red reviewCloser";
+  closeReview.style.float = "right";
+
+  // the stars in the rating
+  let star1 = document.createElement("i");
+  let star2 = document.createElement("i");
+  let star3 = document.createElement("i");
+  let star4 = document.createElement("i");
+  let star5 = document.createElement("i");
+  star1.className = "fas fa-star w3-text-amber ";
+  star2.className = "fas fa-star w3-text-amber ";
+  star3.className = "fas fa-star w3-text-amber ";
+  star4.className = "fas fa-star w3-text-amber ";
+  star5.className = "fas fa-star w3-text-amber ";
+
+  timeReviewed.style.fontStyle = "italic";
+
+  // the default profile pic
+  avtatar.src = "../styling/customers/girl4.jpg";
+  avtatar.className = "profile-pic";
+
+  // adding classnames
+  divGeneral.className = "w3-padding break-line addedReview";
+  divtop.className = "grid-2";
+
+  // appending the children elements to their parents
+  boldname.appendChild(document.createTextNode(customerName));
+  review.appendChild(document.createTextNode(customerReview));
+  pName.appendChild(boldname);
+  timeReviewed.innerHTML = d.toDateString();
+  divright.append(pName, timeReviewed, ratings);
+  reactions.append(likes, dislikes, comments, closeReview);
+
+  divtop.appendChild(avtatar);
+  divtop.appendChild(divright);
+  ratings.append(numberRating, star1, star2, star3, star4, star5);
+
+  divGeneral.append(divtop, review, reactions);
+
+  // appending the review to the review list
+  reviews.prepend(divGeneral);
+
+  // let reviewCloser = document.querySelectorAll(".reviewCloser");
+  // reviewCloser.addEventListener("click", () => {
+  //   divGeneral.style.display = "none";
+  // });
+
+  // send confrim message
+  confirmMessage.style.fontStyle = "italic";
+  confirmMessage.className = "w3-medium w3-text-amber";
+  confirmMessage.appendChild(
+    document.createTextNode(
+      "Your review has been successfully added to the list. You can go ahead and add more or delete the ones you have added"
+    )
+  );
+
+  setTimeout(() => {
+    confirmMessage.style.display = "none";
+  }, 6000);
+
+  // to close the review
+  closeReview.addEventListener("click", () => {
+    if (confirm("Are you sure you want this delete this review?")) {
+      divGeneral.style.display = "none";
+    }
+  });
+}
+
+// let latestReview = document.querySelector(".addedReview");
+// let reviewCloser = document.querySelector(".reviewCloser");
+// reviewCloser.addEventListener("click", alert("nope"));
+
+let showReviewForm = document.querySelector(".show-form");
+showReviewForm.addEventListener("click", () => {
+  // document.querySelector(".addReview").style.display = "block";
+
+  if ((document.querySelector(".addReview").style.display = "none")) {
+    document.querySelector(".addReview").style.display = "block";
+  } else {
+    document.querySelector(".addReview").style.display = "none";
+  }
+});

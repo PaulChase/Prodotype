@@ -186,9 +186,9 @@
           </div>
 
           <!-- users reviews -->
-          <div class="post-reviews carddy w3-white pad-10 w3-padding">
+          <div class="carddy w3-white pad-10 w3-padding">
             <h3><b>Recent Reviews</b></h3>
-            <div>
+            <div class="post-reviews">
               <div class="w3-padding break-line">
                 <div class="grid-2">
                   <img
@@ -214,7 +214,7 @@
                   the previous version.
                 </p>
                 <div class="reactions">
-                  <i class="la la-thumbs-up w3-xlarge mg-s-10"> </i>23
+                  <i class="la la-thumbs-up w3-xlarge mg-s-10"> </i>2
                   <i class="la la-thumbs-down w3-xlarge mg-s-10"></i>2
                   <i class="la la-comments w3-xlarge mg-s-10"></i>6
                 </div>
@@ -244,9 +244,9 @@
                   them just perceiving the perfume.
                 </p>
                 <div class="reactions">
-                  <i class="la la-thumbs-up w3-xlarge mg-s-10"> </i>23
-                  <i class="la la-thumbs-down w3-xlarge mg-s-10"></i>2
-                  <i class="la la-comments w3-xlarge mg-s-10"></i>6
+                  <i class="la la-thumbs-up w3-xlarge mg-s-10"> </i>19
+                  <i class="la la-thumbs-down w3-xlarge mg-s-10"></i>5
+                  <i class="la la-comments w3-xlarge mg-s-10"></i>8
                 </div>
               </div>
               <div class="w3-padding break-line">
@@ -274,9 +274,9 @@
                   battery life.
                 </p>
                 <div class="reactions">
-                  <i class="la la-thumbs-up w3-xlarge mg-s-10"> </i>23
-                  <i class="la la-thumbs-down w3-xlarge mg-s-10"></i>2
-                  <i class="la la-comments w3-xlarge mg-s-10"></i>6
+                  <i class="la la-thumbs-up w3-xlarge mg-s-10"> </i>3
+                  <i class="la la-thumbs-down w3-xlarge mg-s-10"></i>8
+                  <i class="la la-comments w3-xlarge mg-s-10"></i>7
                 </div>
               </div>
               <div class="w3-padding break-line">
@@ -304,9 +304,9 @@
                   eat 5 packs at stretch.
                 </p>
                 <div class="reactions">
-                  <i class="la la-thumbs-up w3-xlarge mg-s-10"> </i>23
+                  <i class="la la-thumbs-up w3-xlarge mg-s-10"> </i>20
                   <i class="la la-thumbs-down w3-xlarge mg-s-10"></i>2
-                  <i class="la la-comments w3-xlarge mg-s-10"></i>6
+                  <i class="la la-comments w3-xlarge mg-s-10"></i>3
                 </div>
               </div>
             </div>
@@ -373,35 +373,47 @@
           </div>
 
           <!-- add review form -->
-          <div class="w3-container carddy w3-white w3-padding w3-large">
+          <div
+            class="w3-container carddy w3-white w3-padding w3-large addReview"
+          >
             <p class="w3-center"><b>Add A review</b></p>
-            <label for="">Name</label>
-            <input type="text" class="w3-input" />
-            <label for="">Email</label>
-            <input type="email" name="" id="" class="w3-input" />
-            <p class="mg-10">Give Your Rating</p>
-            <p>
-              <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
-              <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
-              <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
-              <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
-              <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
-            </p>
-            <label for="">Write your review</label>
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="6"
-              style="resize: none; width: 100%"
-              class="pad-10 mg-10"
-            ></textarea>
-            <button class="w3-btn-block mg-10 w3-teal w3-round">
-              <b>Submit Review</b>
-            </button>
+            <form class="review-form">
+              <label for="">Name</label>
+              <input type="text" class="w3-input customer-name" required />
+              <label for="">Email</label>
+              <input type="email" name="" id="" class="w3-input" />
+              <p class="mg-10">Give Your Rating</p>
+              <p>
+                <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+                <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+                <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+                <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+                <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+              </p>
+              <label for="">Write your review</label>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="6"
+                style="resize: none; width: 100%"
+                class="pad-10 mg-10 customer-review"
+                required
+              ></textarea>
+              <button class="w3-btn-block mg-10 w3-teal w3-round" type="submit">
+                <b>Submit Review</b>
+              </button>
+            </form>
+            <div class="alertMessage"></div>
           </div>
         </aside>
       </div>
+    </div>
+
+    <div class="mobile-reviewBtn w3-padding w3-dark-grey w3-card-4 w3-round">
+      <button class="w3-btn-block w3-round w3-amber w3-card-4 show-form">
+        <b>Add your review</b>
+      </button>
     </div>
 
     <!-- footer  -->
@@ -437,10 +449,10 @@
         </div>
         <div class="w3-center">
           <p class="w3-xlarge"><b> Follow Us On</b></p>
-          <i class="la la-facebook w3-xxlarge w3-margin"></i>
-          <i class="la la-youtube w3-xxlarge w3-margin"></i>
-          <i class="la la-twitter w3-xxlarge w3-margin"></i>
-          <i class="la la-pinterest w3-xxlarge w3-margin"></i>
+          <i class="la la-facebook w3-xxlarge mg-s-10"></i>
+          <i class="la la-youtube w3-xxlarge mg-s-10"></i>
+          <i class="la la-twitter w3-xxlarge mg-s-10"></i>
+          <i class="la la-pinterest w3-xxlarge mg-s-10"></i>
         </div>
       </div>
     </section>

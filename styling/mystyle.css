@@ -304,6 +304,14 @@ textarea {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.mobile-reviewBtn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  display: none;
+}
+
 /* responsive */
 
 @media (max-width: 650px) {
@@ -380,5 +388,13 @@ textarea {
 @media (max-width: 720px) {
   .post-grid {
     grid-template-columns: 1fr;
+  }
+
+  .mobile-reviewBtn {
+    display: block;
+  }
+
+  .addReview {
+    display: none;
   }
 }
