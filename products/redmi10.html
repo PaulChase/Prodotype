@@ -40,9 +40,9 @@
             <li class="w3-dropdown-hover w3-white">
               <a href="#">Categories <i class="fas fa-caret-down"></i></a>
               <div class="w3-dropdown-content w3-card-2">
-                <a href="#">fashion</a>
+                <a href="../fashion.htm">fashion</a>
                 <a href="../techpage.htm">Phones & Gadgets</a>
-                <a href="#">Food & drinks</a>
+                <a href="../food.htm">Food & drinks</a>
               </div>
             </li>
             <li><a href="../news.htm">News</a></li>
@@ -145,6 +145,7 @@
       </div>
     </div>
 
+    <!-- product info -->
     <div class="shifter">
       <div class="max-fat post-grid">
         <div class="row-grid">
@@ -355,8 +356,9 @@
         </div>
 
         <!-- sidebar -->
-        <!-- share box -->
+
         <aside class="2nd-column side-grid">
+          <!-- share box -->
           <div class="carddy w3-white">
             <p class="w3-large w3-margin w3-center">
               <b>Share to <i class="la la-telegram"></i></b>
@@ -373,46 +375,53 @@
           </div>
 
           <!-- add review form -->
-          <div
-            class="w3-container carddy w3-white w3-padding w3-large addReview"
-          >
-            <p class="w3-center"><b>Add A review</b></p>
-            <form class="review-form">
-              <label for="">Name</label>
-              <input type="text" class="w3-input customer-name" required />
-              <label for="">Email</label>
-              <input type="email" name="" id="" class="w3-input" />
-              <p class="mg-10">Give Your Rating</p>
-              <p>
-                <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
-                <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
-                <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
-                <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
-                <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
-              </p>
-              <label for="">Write your review</label>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="6"
-                style="resize: none; width: 100%"
-                class="pad-10 mg-10 customer-review"
-                required
-              ></textarea>
-              <button class="w3-btn-block mg-10 w3-teal w3-round" type="submit">
-                <b>Submit Review</b>
-              </button>
-            </form>
-            <div class="alertMessage"></div>
+          <div class="addReview">
+            <div
+              id="reviewContent"
+              class="w3-container carddy w3-white w3-padding w3-large"
+            >
+              <p class="w3-center"><b>Add A review</b></p>
+              <form class="review-form">
+                <label for="">Name</label>
+                <input type="text" class="w3-input customer-name" required />
+                <label for="">Email</label>
+                <input type="email" name="" id="" class="w3-input" />
+                <p class="mg-10">Give Your Rating</p>
+                <p>
+                  <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+                  <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+                  <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+                  <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+                  <i class="fas fa-star w3-text-grey w3-hover-text-amber"></i>
+                </p>
+                <label for="">Write your review</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="6"
+                  style="resize: none; width: 100%"
+                  class="pad-10 mg-10 customer-review"
+                  required
+                ></textarea>
+                <button
+                  id="submitBtn"
+                  class="w3-btn-block mg-10 w3-teal w3-round"
+                  type="submit"
+                >
+                  <b>Submit Review</b>
+                </button>
+              </form>
+              <div class="alertMessage"></div>
+            </div>
           </div>
         </aside>
       </div>
     </div>
 
-    <div class="mobile-reviewBtn w3-padding w3-dark-grey w3-card-4 w3-round">
+    <div class="mobile-reviewBtn w3-padding w3-grey w3-card-4 w3-round">
       <button class="w3-btn-block w3-round w3-amber w3-card-4 show-form">
-        <b>Add your review</b>
+        <b><i class="fas fa-star"></i> Add your review</b>
       </button>
     </div>
 

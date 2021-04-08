@@ -159,18 +159,41 @@ function submitReview(e) {
     }
   });
 }
+// end of function
 
 // let latestReview = document.querySelector(".addedReview");
 // let reviewCloser = document.querySelector(".reviewCloser");
 // reviewCloser.addEventListener("click", alert("nope"));
 
+let addReview = document.querySelector(".addReview");
+
 let showReviewForm = document.querySelector(".show-form");
 showReviewForm.addEventListener("click", () => {
-  // document.querySelector(".addReview").style.display = "block";
+  // if ((document.querySelector(".addReview").style.display = "none")) {
+  //   document.querySelector(".addReview").style.display = "block";
+  // } else {
+  //   document.querySelector(".addReview").style.display = "none";
+  // }
 
-  if ((document.querySelector(".addReview").style.display = "none")) {
-    document.querySelector(".addReview").style.display = "block";
-  } else {
-    document.querySelector(".addReview").style.display = "none";
-  }
+  let closeBtn = document.createElement("button");
+  closeBtn.appendChild(document.createTextNode("close"));
+  closeBtn.className = "w3-btn mg-s-10 w3-round";
+  closeBtn.style.width = "40%";
+  closeBtn.style.opacity = 0.2;
+
+  closeBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    addReview.style.display = "none";
+  });
+
+  let addedReviewContent = document.querySelector("#reviewContent");
+  addedReviewContent.className += " w3-modal-content";
+
+  let submitBtn = document.querySelector("#submitBtn");
+
+  reviewForm.appendChild(closeBtn);
+
+  submitBtn.style.width = "50%";
+  addReview.className += " w3-modal  ";
+  addReview.style.display = "block";
 });
